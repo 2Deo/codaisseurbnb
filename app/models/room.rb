@@ -1,4 +1,5 @@
 class Room < ApplicationRecord
+  has_and_belongs_to_many :themes
   belongs_to :user
 
 validates :address, presence: true
