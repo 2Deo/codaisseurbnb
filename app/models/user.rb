@@ -13,8 +13,7 @@ class User < ApplicationRecord
   end
 
   def full_name
-    return profile.full_name if profile?
+    profile.full_name
 
-    email
   end
 end
